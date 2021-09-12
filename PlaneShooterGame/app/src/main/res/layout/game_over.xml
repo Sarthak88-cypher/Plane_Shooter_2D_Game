@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <RelativeLayout
+    android:background="@drawable/background"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button android:background="@android:color/holo_blue_dark"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="18sp" android:textColor="#ffffff"
+        android:onClick="restart" android:text="Restart"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/button"/>
+
+    <Button android:background="@android:color/holo_blue_dark"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:onClick="exit"
+        android:text="Exit"
+        android:layout_alignParentTop="true"
+        android:id="@+id/button2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+
+    <LinearLayout android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true">
+
+
+    <LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="horizontal">
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Score: "/>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="36sp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:text="TextView"
+        android:id="@+id/tvScore"/>
+
+</LinearLayout>
+
+
+    <LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="horizontal">
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Best Score: "/>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/holo_green_dark"
+        android:text="TextView"
+        android:id="@+id/tvBestScore"/>
+
+</LinearLayout>
+
+    <ImageView android:background="@drawable/game_over"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/imageView"/>
+
+</LinearLayout>
+
+</RelativeLayout>
